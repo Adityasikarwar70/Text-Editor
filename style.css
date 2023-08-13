@@ -1,0 +1,165 @@
+.title_row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.title_row h5 {
+  display: inline;
+  width: fit-content;
+  max-width: 160px;
+}
+.title_row button {
+  height: min-content;
+}
+
+.trash {
+  /* border: 2px solid rgba(248, 0, 0, 0) !important; */
+  transition: all 0.2s ease !important;
+}
+.trash:hover {
+  /* border: 2px solid rgba(248, 0, 0, 0.579) !important; */
+  transform: scale(1.1) !important;
+}
+
+#btn_row *{
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: 900px) {
+  nav {
+    padding: 15px 50px !important;
+    justify-content: space-between !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  nav {
+    padding: 15px 70px !important;
+    justify-content: space-between !important;
+  }
+}
+@media screen and (max-width: 760px) {
+  .notes_container {
+    justify-content: center !important;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+nav {
+  background-color: #007bff !important;
+}
+#notes_heading {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.notes_container {
+  justify-content: space-around;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.note_button {
+  display: flex;
+  /* gap: 1px; */
+}
+.btn-danger {
+  background-color: #ff7986cf !important;
+  border-color: #ff6372 !important;
+}
+
+.btn-success {
+  background-color: #52d571ca !important;
+  border-color: #52d570 !important;
+}
+
+.btn-danger,
+.btn-success {
+  transform: scale(0.8);
+}
+.btn-danger:hover,
+.btn-success:hover {
+  transform: scale(0.9) !important;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgba(78, 255, 96, 0.804);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 10px !important;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+.form-check{
+  margin-top: 15px;
+}
+
+.very_important{
+  border: 2px solid red !important;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 0.5s;
+  animation: fadein 0.5s, fadeout 0.5s 1s;
+}
+
+#notesBody{
+  margin-bottom: 10px;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.searchBar{
+  flex-wrap: nowrap !important;
+}
